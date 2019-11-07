@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="WebFonts/css/font-awesome.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
 
 </head>
+<!-- Комментарий -->
 
 <body>
     <!-- Top Navigation for lg  -->
-    <header class="d-none d-lg-block">
+    <header class="d-none d-lg-block" id="top">
         <div class="container ">
             <div class="heading_block">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -31,19 +32,19 @@
                     <div class="collapse navbar-collapse justify-content-end mt-5" id="navbarSupportedContent">
                         <ul class="navbar-nav text-uppercase">
                             <li class="nav-item ml-4">
-                                <a class="nav-link anchor text-white" href="#f">home</a>
+                                <a class="nav-link anchor text-white" href="#home">home</a>
                             </li>
                             <li class="nav-item ml-4">
-                                <a class="nav-link anchor text-white" href="#">services</a>
+                                <a class="nav-link anchor text-white" href="#services">services</a>
                             </li>
                             <li class="nav-item ml-4">
-                                <a class="nav-link anchor text-white" href="#">about us</a>
+                                <a class="nav-link anchor text-white" href="#about">about us</a>
                             </li>
                             <li class="nav-item ml-4">
-                                <a class="nav-link anchor text-white" href="#">news</a>
+                                <a class="nav-link anchor text-white" href="#news">news</a>
                             </li>
                             <li class="nav-item ml-4">
-                                <a class="nav-link anchor text-white" href="#">contact</a>
+                                <a class="nav-link anchor text-white" href="#contact">contact</a>
                             </li>
                         </ul>
                     </div>
@@ -72,7 +73,7 @@
         </div>
         <!-- /Header -->
     </header>
-    <!-- Top Navigation for not lg  -->
+    <!-- Top Navigation for not lg (пропадает под)  -->
     <header class="bg-white text-dark  d-flex flex-column bg_notlg bg-white d-inline" id="top">
         <div class="position-fixed fixed-menu w-100 bg-white shadow-sm d-lg-none d-inline menu_not_lg">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -106,7 +107,7 @@
             </nav>
         </div>
     </header>
-    <section class="container">
+    <section class="container" id="services">
         <div class="text-center">
             <h2 class="text-uppercase ">
                 our services
@@ -120,7 +121,7 @@
             <div class="col-12 col-sm-4 col-md-3 feature-item text-center">
                 <img src="img/Performance  Improvement.png" alt="">
                 <h5 class="text-center">Performance Improvement</h4>
-                    <hr class="bg-danger">
+                    <hr class="bg-danger d-inline-block w-50"> <!-- изменение размера width, inline-block -->
                     <p>Enabling companies to grow
                         revenue, improve margins and
                         reposition quickly.</p>
@@ -129,7 +130,7 @@
                 <img src="img/Customer  Strategy & Marketing.png" alt="">
                 <h5 class="text-center">Customer
                     Strategy & Marketing</h5>
-                <hr class="bg-danger">
+                <hr class="bg-danger d-inline-block w-50">
                 <p>In-depth customer insights
                     combined with economic and
                     operational fundamentals</p>
@@ -138,7 +139,7 @@
                 <img src="img/Information  Technology.png" alt="">
                 <h5>Information
                     Technology</h5>
-                <hr class="bg-danger">
+                <hr class="bg-danger d-inline-block w-50">
                 <p>Realizing the full potential
                     of IT resources, investments
                     and assets</p>
@@ -147,7 +148,7 @@
                 <img src="img/Full Potential  Transformation.png" alt="">
                 <h5>Full Potential
                     Transformation</h5>
-                <hr class="bg-danger">
+                <hr class="bg-danger d-inline-block w-50">
                 <p>A cross-functional effort to alter
                     the financial, operational and
                     strategic trajectory of a business</p>
@@ -157,7 +158,7 @@
             <div class="col-12 col-sm-4 col-md-3 feature-item text-center">
                 <img src="img/Strategy.png" alt="">
                 <h5>Strategy</h5>
-                <hr class="bg-danger">
+                <hr class="bg-danger d-inline-block w-50">
                 <p>Tailored solutions that deliver
                     results and achieve sustained
                     growth</p>
@@ -165,7 +166,7 @@
             <div class="col-12 col-sm-4 col-md-3 feature-item text-center">
                 <img src="img/Private Equity.png" alt="">
                 <h5>Privat Equit</h5>
-                <hr class="bg-danger">
+                <hr class="bg-danger d-inline-block w-50">
                 <p>Advising investors across
                     the entire investment life
                     cycle</p>
@@ -173,7 +174,7 @@
             <div class="col-12 col-sm-4 col-md-3 feature-item text-center">
                 <img src="img/Digital.png" alt="">
                 <h5>Digital</h5>
-                <hr class="bg-danger">
+                <hr class="bg-danger d-inline-block w-50">
                 <p>Deliver on core strategy,
                     delight customers and operate
                     smarter and faster</p>
@@ -181,7 +182,7 @@
             <div class="col-12 col-sm-4 col-md-3 feature-item text-center">
                 <img src="img/Results Delivery.png" alt="">
                 <h5>Results Deliveri</h5>
-                <hr class="bg-danger">
+                <hr class="bg-danger d-inline-block w-50">
                 <p>Predicting, measuring and
                     managing risk associated with
                     change management</p>
@@ -192,56 +193,625 @@
 
     <section class="contact_us">
         <div class="container text-center">
-            <h2 class="text-white text-uppercase text-center pt-5 d-none d-lg-block">Contact us for a FREE, NO OBLIGATION confidential 
+            <h2 class="text-white text-uppercase text-center pt-5 d-none d-lg-block">Contact us for a FREE, NO
+                OBLIGATION confidential
                 exploration of your needs</h2>
-            <h4 class="text-white text-uppercase text-center pt-5 d-lg-none">Contact us for a FREE, NO OBLIGATION confidential 
+            <h4 class="text-white text-uppercase text-center pt-5 d-lg-none">Contact us for a FREE, NO OBLIGATION
+                confidential
                 exploration of your needs</h4>
-            
+
             <button type="button" class="btn btn-danger btn-lg px-4 py-2 mt-4">Contact US</button>
         </div>
     </section>
 
-    <section class="container about_us">
-            <div class="text-center pt-5">
-                    <h2 class="text-uppercase ">
-                        About us
-                    </h2>
-                    <p class="text-muted pt-4">SKOKOV is one of the world's leading management consulting firms. We care for our clients' business as our 
-                            own, they know we're in this together</p>
+    <section class="container about_us" id="about">
+        <div class="text-center pt-5">
+            <h2 class="text-uppercase ">
+                About us
+            </h2>
+            <p class="text-muted pt-4">SKOKOV is one of the world's leading management consulting firms. We care for our
+                clients' business as our
+                own, they know we're in this together</p>
+        </div>
+
+        <div class="row about_row_one">
+            <div class="col-12 col-sm-4 col-md-6">
+                <h5 class="text-danger text-uppercase mt-4 mb-4"><span>What</span> we do</h5>
+                <p>When someone asks what we do SKOKOV, it’s tempting to point out our
+                    four-decade track record for helping to transform the world’s great companies
+                    into sharper, smarter, better versions of themselves. It’s true, our mission is to
+                    help management teams create such high levels of economic value that together
+                    we redefine our respective industries.<br>
+                    We work with top executives to help them make better decisions, convert those
+                    decisions to actions, and deliver the sustainable success they desire. For forty
+                    years, we've been passionate about achieving better results for our
+                    clients-results that go beyond financial and are uniquely tailored, pragmatic,
+                    holistic, and enduring.<br>
+                    We advise global leaders on their most critical issues and opportunities: strategy,
+                    marketing, organization, operations, technology, transformations and
+                    mergers & acquisitions, across all industries and geographies.
+                    Our unique approach to traditional change management, called
+                    Results Delivery®, helps clients measure and manage risk and overcome the
+                    odds to realize results.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="our_clients">
+                    <h5 class="text-danger text-uppercase mt-4 mb-4"><span>Our</span> Clients</h5>
+                    <!-- for pc -->
+                    <div id="carouselExampleIndicators" class="carousel  slide pb-5 d-none d-lg-block"
+                        data-ride="carousel">
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <div class="row mx-0">
+                                    <img class="clients p-1" src="img/1.png" alt="image">
+                                    <img class="clients p-1" src="img/2.png" alt="image">
+                                    <img class="clients p-1" src="img/3.png" alt="image">
+                                </div>
+                                <div class="row mx-0">
+                                    <img class="clients p-1" src="img/4.png" alt="image">
+                                    <img class="clients p-1" src="img/5.png" alt="image">
+                                    <img class="clients p-1" src="img/6.png" alt="image">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row mx-0">
+                                    <img class="clients p-1" src="img/1.png" alt="image">
+                                    <img class="clients p-1" src="img/2.png" alt="image">
+                                    <img class="clients p-1" src="img/3.png" alt="image">
+                                </div>
+                                <div class="row mx-0">
+                                    <img class="clients p-1" src="img/4.png" alt="image">
+                                    <img class="clients p-1" src="img/5.png" alt="image">
+                                    <img class="clients p-1" src="img/6.png" alt="image">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row mx-0">
+                                    <img class="clients p-1" src="img/1.png" alt="image">
+                                    <img class="clients p-1" src="img/2.png" alt="image">
+                                    <img class="clients p-1" src="img/3.png" alt="image">
+                                </div>
+                                <div class="row mx-0">
+                                    <img class="clients p-1" src="img/4.png" alt="image">
+                                    <img class="clients p-1" src="img/5.png" alt="image">
+                                    <img class="clients p-1" src="img/6.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators pt-2">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                    <!-- for mobile -->
+                    <div id="carouselExampleIndicators" class="carousel slide d-lg-none pb-5" data-ride="carousel">
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <div class="row mx-0 mobile">
+                                    <img class="clients_for_mobile p-1" src="img/1.png" alt="image">
+                                    <img class="clients_for_mobile p-1" src="img/2.png" alt="image">
+                                    <img class="clients_for_mobile p-1" src="img/3.png" alt="image">
+                                </div>
+                                <div class="row mx-0">
+                                    <img class="clients_for_mobile p-1" src="img/4.png" alt="image">
+                                    <img class="clients_for_mobile p-1" src="img/5.png" alt="image">
+                                    <img class="clients_for_mobile p-1" src="img/6.png" alt="image">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row mx-0">
+                                    <img class="clients_for_mobile p-1" src="img/1.png" alt="image">
+                                    <img class="clients_for_mobile p-1" src="img/2.png" alt="image">
+                                    <img class="clients_for_mobile p-1" src="img/3.png" alt="image">
+                                </div>
+                                <div class="row mx-0">
+                                    <img class="clients_for_mobile p-1" src="img/4.png" alt="image">
+                                    <img class="clients_for_mobile p-1" src="img/5.png" alt="image">
+                                    <img class="clients_for_mobile p-1" src="img/6.png" alt="image">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row mx-0">
+                                    <img class="clients_for_mobile p-1" src="img/1.png" alt="image">
+                                    <img class="clients_for_mobile p-1" src="img/2.png" alt="image">
+                                    <img class="clients_for_mobile p-1" src="img/3.png" alt="image">
+                                </div>
+                                <div class="row mx-0">
+                                    <img class="clients_for_mobile p-1" src="img/4.png" alt="image">
+                                    <img class="clients_for_mobile p-1" src="img/5.png" alt="image">
+                                    <img class="clients_for_mobile p-1" src="img/6.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators pt-2">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="our_team col-sm-12 cold-md-6 d-none d-lg-block">
+            <h5 class="text-danger text-uppercase mt-4 mb-4">Our team</h5>
+            <div class="d-flex row">
+                <div class="scene">
+                    <div class="card">
+                        <div class="card__face card__face--front"><img width="180px" height="180px"
+                                src="img/our_team/1.jpg"></div>
+                        <div class="card__face card__face--back">
+                            <h5 class="text-white p-2">Cortny Koks</h5>
+                            <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                            <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                            <p class="ml-1 text-white">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card">
+                        <div class="card__face card__face--front"><img width="180px" height="180px"
+                                src="img/our_team/clark kent.jpg"></div>
+                        <div class="card__face card__face--back">
+                            <h5 class="text-white p-2">Clark Kent</h5>
+                            <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                            <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                            <p class="ml-1 text-white">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card">
+                        <div class="card__face card__face--front"><img width="180px" height="180px"
+                                src="img/our_team/2.jpg"></div>
+                        <div class="card__face card__face--back">
+                            <h5 class="text-white p-2">Cortny Koks</h5>
+                            <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                            <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                            <p class="ml-1 text-white">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card">
+                        <div class="card__face card__face--front"><img width="180px" height="180px"
+                                src="img/our_team/3.jpg"></div>
+                        <div class="card__face card__face--back">
+                            <h5 class="text-white p-2">Cortny Koks</h5>
+                            <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                            <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                            <p class="ml-1 text-white">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card">
+                        <div class="card__face card__face--front"><img width="180px" height="180px"
+                                src="img/our_team/4.jpg"></div>
+                        <div class="card__face card__face--back">
+                            <h5 class="text-white p-2">Cortny Koks</h5>
+                            <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                            <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                            <p class="ml-1 text-white">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card">
+                        <div class="card__face card__face--front"><img width="180px" height="180px"
+                                src="img/our_team/5.jpg"></div>
+                        <div class="card__face card__face--back">
+                            <h5 class="text-white p-2">Cortny Koks</h5>
+                            <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                            <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                            <p class="ml-1 text-white">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex row">
+                <div class="scene">
+                    <div class="card">
+                        <div class="card__face card__face--front"><img width="180px" height="180px"
+                                src="img/our_team/6.jpg"></div>
+                        <div class="card__face card__face--back">
+                            <h5 class="text-white p-2">Cortny Koks</h5>
+                            <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                            <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                            <p class="ml-1 text-white">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card">
+                        <div class="card__face card__face--front"><img width="180px" height="180px"
+                                src="img/our_team/7.jpg"></div>
+                        <div class="card__face card__face--back">
+                            <h5 class="text-white p-2">Clark Kent</h5>
+                            <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                            <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                            <p class="ml-1 text-white">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card">
+                        <div class="card__face card__face--front"><img width="180px" height="180px"
+                                src="img/our_team/8.jpg"></div>
+                        <div class="card__face card__face--back">
+                            <h5 class="text-white p-2">Cortny Koks</h5>
+                            <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                            <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                            <p class="ml-1 text-white">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card">
+                        <div class="card__face card__face--front"><img width="180px" height="180px"
+                                src="img/our_team/9.jpg"></div>
+                        <div class="card__face card__face--back">
+                            <h5 class="text-white p-2">Cortny Koks</h5>
+                            <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                            <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                            <p class="ml-1 text-white">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card">
+                        <div class="card__face card__face--front"><img width="180px" height="180px"
+                                src="img/our_team/10.jpg"></div>
+                        <div class="card__face card__face--back">
+                            <h5 class="text-white p-2">Cortny Koks</h5>
+                            <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                            <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                            <p class="ml-1 text-white">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card">
+                        <div class="card__face card__face--front"><img width="180px" height="180px"
+                                src="img/our_team/11.jpg"></div>
+                        <div class="card__face card__face--back">
+                            <h5 class="text-white p-2">Cortny Koks</h5>
+                            <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                            <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                            <p class="ml-1 text-white">Team Leader</p>
+                        </div>
+                    </div>
                 </div>
 
+            </div>
+        </div>
+
+        <div class="our_team col-sm-12 cold-md-6 d-lg-none">
+            <h5 class="text-danger text-uppercase mt-4 mb-4">Our team</h5>
+            <div class="row p-1">
+                <div class="col-6 p-0">
+                    <img width="170px" height="170px" src="img/our_team/1.jpg" alt="">
+                </div>
+                <div class="col-6 bg-danger">
+                    <h5 class="text-white p-2">Cortny Koks</h5>
+                    <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                    <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                    <p class="ml-1 text-white">Team Leader</p>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6 p-0">
+                    <img width="170px" height="170px" src="img/our_team/clark kent.jpg" alt="">
+                </div>
+                <div class="col-6 bg-danger">
+                    <h5 class="text-white p-2">Clark Cent</h5>
+                    <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                    <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                    <p class="ml-1 text-white">Team Leader</p>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6 p-0">
+                    <img width="170px" height="170px" src="img/our_team/2.jpg" alt="">
+                </div>
+                <div class="col-6 bg-danger">
+                    <h5 class="text-white p-2">Cortny Koks</h5>
+                    <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                    <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                    <p class="ml-1 text-white">Team Leader</p>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6 p-0">
+                    <img width="170px" height="170px" src="img/our_team/3.jpg" alt="">
+                </div>
+                <div class="col-6 bg-danger">
+                    <h5 class="text-white p-2">Cortny Koks</h5>
+                    <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                    <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                    <p class="ml-1 text-white">Team Leader</p>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6 p-0">
+                    <img width="170px" height="170px" src="img/our_team/4.jpg" alt="">
+                </div>
+                <div class="col-6 bg-danger">
+                    <h5 class="text-white p-2">Cortny Koks</h5>
+                    <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                    <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                    <p class="ml-1 text-white">Team Leader</p>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6 p-0">
+                    <img width="170px" height="170px" src="img/our_team/5.jpg" alt="">
+                </div>
+                <div class="col-6 bg-danger">
+                    <h5 class="text-white p-2">Cortny Koks</h5>
+                    <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                    <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                    <p class="ml-1 text-white">Team Leader</p>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6 p-0">
+                    <img width="170px" height="170px" src="img/our_team/6.jpg" alt="">
+                </div>
+                <div class="col-6 bg-danger">
+                    <h5 class="text-white p-2">Cortny Koks</h5>
+                    <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                    <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                    <p class="ml-1 text-white">Team Leader</p>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6 p-0">
+                    <img width="170px" height="170px" src="img/our_team/7.jpg" alt="">
+                </div>
+                <div class="col-6 bg-danger">
+                    <h5 class="text-white p-2">Cortny Koks</h5>
+                    <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                    <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                    <p class="ml-1 text-white">Team Leader</p>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6 p-0">
+                    <img width="170px" height="170px" src="img/our_team/8.jpg" alt="">
+                </div>
+                <div class="col-6 bg-danger">
+                    <h5 class="text-white p-2">Cortny Koks</h5>
+                    <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                    <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                    <p class="ml-1 text-white">Team Leader</p>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6 p-0">
+                    <img width="170px" height="170px" src="img/our_team/9.jpg" alt="">
+                </div>
+                <div class="col-6 bg-danger">
+                    <h5 class="text-white p-2">Cortny Koks</h5>
+                    <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                    <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                    <p class="ml-1 text-white">Team Leader</p>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6 p-0">
+                    <img width="170px" height="170px" src="img/our_team/10.jpg" alt="">
+                </div>
+                <div class="col-6 bg-danger">
+                    <h5 class="text-white p-2">Cortny Koks</h5>
+                    <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                    <p class="font-weight-bold mb-0 ml-1 text-white"> Bad Debt Manager</p>
+                    <p class="ml-1 text-white">Team Leader</p>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6 p-0">
+                    <img width="170px" height="170px" src="img/our_team/11.jpg" alt="">
+                </div>
+                <div class="col-6 bg-danger">
+                    <h5 class="text-white p-2">Cortny Koks</h5>
+                    <hr class="ml-3 mt-4 mb-0 d-inline-block w-75">
+                    <p class="font-weight-bold mb-0 ml-1 text-white">Bad Debt Manager</p>
+                    <p class="ml-1 text-white">Team Leader</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="strategic mt-5" >
+        <div class="container">
+
+            <div class="d-flex align-items-center flex-column button_play">
+                <div class=""><button type="button" class="btn btn-danger border-radius-50"
+                        style="width:65px; height: 65px;"><i class="ml-1 fa fa-play fa-1x" aria-hidden="true"></i>
+                    </button></div>
+                <div class="pt-2">
+                    <h4 class="text-uppercase text-center font-weight-bold text-white">
+                        we blend the strategic with creative
+                    </h4>
+                </div>
+                <div class="text-center">
+                    <p class="text-center text-white d-inline-block w-75">
+                        When someone asks what we do at SKOKOV, it’s tempting to point out our four-decade track record
+                        for helping to transform
+                        the world’s great companies into sharper, smarter, better versions of themselves.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="news container pb-5" id="news">
+        <div class="text-center pt-5">
+            <h2 class="text-uppercase ">
+                News
+            </h2>
+            <p class="text-muted pt-4">Together, we find value across boundaries, develop insights to act on, and
+                energize teams to sustain success. We're passionate about
+                always doing the right thing for our clients, our people and our communities, even if it isn't easy.</p>
+        </div>
+        <div class="d-lg-none">
+            <div class="bg-dark">
+                <h4 class="text-danger text-uppercase font-weight-bold pt-2 pl-4">Why financial
+                    institutions need
+                    a new IT model</h3>
+                    <hr class="bg-danger w-25 font-weight-bold ml-4">
+                    <p class="text-white w-75 pl-4" style="font-size:12px;">Why old IT models are unlikely to
+                        deliver the competitive edge that
+                        banks, insurers and wealth
+                        management firms need from
+                        technology</p>
+                    <p class="text-danger pb-2 pr-2 text-right" style="font-size:12px;">09.03.2014</p>
+            </div>
+            <div class="bg-dark">
+                <h4 class="text-danger text-uppercase font-weight-bold pt-2 pl-4">Reimagining IT
+                    for an
+                    omnichannel
+                    world</h3>
+                    <hr class="bg-danger w-25 font-weight-bold ml-4">
+                    <p class="text-white w-75 pl-4" style="font-size:12px;">The technology that powers retail is
+                        evolving rapidly. Retailers and their IT
+                        groups will have to rise to stay ahead</p>
+                    <p class="text-danger pb-2 pr-2 text-right" style="font-size:12px;">08.20.2014</p>
+            </div>
+            <div class="bg-dark">
+                <h4 class="text-danger text-uppercase font-weight-bold pt-2 pl-4">Making the most
+                    of generation
+                    assets in
+                    turbulent times</h3>
+                    <hr class="bg-danger w-25 font-weight-bold ml-4">
+                    <p class="text-white w-75 pl-4" style="font-size:12px;">A thorough review of a power
+                        generation portfolio informs decisions
+                        about how to reduce costs, raise
+                        revenues and make strategic plans.</p>
+                    <p class="text-danger pb-2 pr-2 text-right" style="font-size:12px;">08.27.2014</p>
+            </div>
+        </div>
+
+        <div class="d-none d-lg-block">
             <div class="row">
-                <div class="col-12 col-sm-4 col-md-6">
-                   <h5 class="text-danger text-uppercase"><span>What</span>  we do</h5>
-                    <p>When someone asks what we do SKOKOV, it’s tempting to point out our 
-                        four-decade track record for helping to transform the world’s great companies 
-                        into sharper, smarter, better versions of themselves. It’s true, our mission is to 
-                        help management teams create such high levels of economic value that together 
-                        we redefine our respective industries.
-                        We work with top executives to help them make better decisions, convert those 
-                        decisions to actions, and deliver the sustainable success they desire. For forty 
-                        years, we've been passionate about achieving better results for our 
-                        clients-results that go beyond financial and are uniquely tailored, pragmatic, 
-                        holistic, and enduring.
-                        We advise global leaders on their most critical issues and opportunities: strategy, 
-                        marketing, organization, operations, technology, transformations and 
-                        mergers & acquisitions, across all industries and geographies. 
-                        Our unique approach to traditional change management, called 
-                        Results Delivery®, helps clients measure and manage risk and overcome the 
-                        odds to realize results.</p>
+                <div class="col-6 new-image_one"></div>
+                <div class="col-3 bg-dark">
+                    <h4 class="text-danger text-uppercase font-weight-bold pt-4">Why financial
+                        institutions need
+                        a new IT model</h3>
+                        <hr class="bg-danger w-25 font-weight-bold">
+                        <p class="text-white w-75" style="font-size:12px;">Why old IT models are unlikely to
+                            deliver the competitive edge that
+                            banks, insurers and wealth
+                            management firms need from
+                            technology</p>
+                        <p class="text-danger  text-right" style="font-size:12px;">09.03.2014</p>
                 </div>
-                <div class="col-12 col-sm-4 col-md-6">
-                    
+                <div class="col-3 new-image_two"></div>
+            </div>
+            <div class="row">
+                <div class="col-3 bg-dark">
+                    <h4 class="text-danger text-uppercase font-weight-bold pt-4 w-50">Reimagining IT
+                        for an
+                        omnichannel
+                        world</h3>
+                        <hr class="bg-danger w-25 font-weight-bold">
+                        <p class="text-white" style="font-size:12px;">The technology that powers retail is
+                            evolving rapidly. Retailers and their IT
+                            groups will have to rise to stay ahead.</p>
+                        <p class="text-danger text-right" style="font-size:12px;">08.20.2014</p>
                 </div>
-            </div>    
-
+                <div class="col-6 new-image_three "></div>
+                <div class="col-3 bg-dark">
+                    <h4 class="text-danger text-uppercase font-weight-bold pt-4">Making the most
+                        of generation
+                        assets in
+                        turbulent times</h3>
+                        <hr class="bg-danger w-25 font-weight-bold">
+                        <p class="text-white w-75" style="font-size:12px;">A thorough review of a power
+                            generation portfolio informs decisions
+                            about how to reduce costs, raise
+                            revenues and make strategic plans.</p>
+                        <p class="text-danger text-right" style="font-size:12px;">08.27.2015</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
 
     </section>
+    <section class="skokov_contact" id="contact">
+        <div class="container">
+            <div class="row col-12">
+                <div class="col-sm-6 pt-5">
+                    <h3 class="text-danger text-uppercase font-weight-bold">SKOKOV</h3>
+                    <p class="text-white mt-5" style="font-size:14px;">Thank you for your interest in SKOKOV. Please
+                        contact us using the
+                        information below. To locate contacts in the SKOKOV office closest to
+                        you, visit our office websites. To get the latest updates from SKOKOV,
+                        subscribe to a newsletter or connect with us on social media.</p>
+                    <hr class="bg-danger w-25">
+                    <div class="contact_icons pt-5">
+                        <p class="text-danger font-weight-bold"><img src="img/pin.png" alt=""> 43 gagarina street,
+                            kharkov, ukraine</p>
+                        <p class="text-danger font-weight-bold"><img src="img/phone.png" alt=""> +38 (057) 777-05-05</p>
+                        <p class="text-danger font-weight-bold"><img src="img/message.png" alt="">
+                            mynameisskokov@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 pt-5 pb-5 float-right">
+                    <h3 class="text-danger text-uppercase font-weight-bold">Contact</h3>
+                    <hr class="bg-danger w-25">
+                    <p class="text-white mt-5" style="font-size:14px;">Please contact us using contact form below.</p>
+                    <div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
+                                placeholder="Name"></textarea>
+                        </div>
+                        <div class="form-group">
 
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
+                                placeholder="Subject"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="float-right"><button type="button" class="btn btn-danger px-5">Send</button></div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark p-5">
+        <div class="container">
+            <div class="row col-12">
+                <p class="float-left text-white font-weight-bold text-uppercase col-sm-6" style="font-size:12px;"><i
+                        class="fa fa-copyright" aria-hidden="true"></i>
+                    2014 SKOKOV - all rights reserved</p>
+                <div class="col-sm-6">
+                    <div class="float-right font-weight-bold p-0">
+                        <i class="fa fa-linkedin fa-1x text-danger pr-3" aria-hidden="true"></i>
+                        <i class="fa fa-facebook fa-1x text-danger pr-3" aria-hidden="true"></i>
+                        <i class="fa fa-twitter fa-1x text-danger pr-3" aria-hidden="true"></i>
+                        <i class="fa fa-youtube fa-1x text-danger pr-3" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#top" class="anchor goto-top px-2 text-white bg-danger shadow-lg rounded-circle">
+            <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
 
-
-
+    </a>
+    <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -251,7 +821,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    
 </body>
 
 </html>
